@@ -1,6 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
+import { Box } from "@mui/system";
+import { Typography } from "@mui/material";
 import styles from "../styles/Home.module.css";
+import Header from "../components/Header";
+import Stories from "../components/Stories";
 
 export default function Home() {
   return (
@@ -17,7 +20,6 @@ export default function Home() {
           marginRight: "5%",
         }}
       >
-        <Typography variant="h4">News Site:</Typography>
         <Box
           style={{
             maxWidth: "100%",
@@ -25,8 +27,8 @@ export default function Home() {
             padding: "5px",
           }}
         >
-          {/* <Header />
-        <Stories /> */}
+          <Header />
+          {/* <Stories /> */}
         </Box>
       </Box>
     </div>
