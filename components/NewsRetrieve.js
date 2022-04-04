@@ -11,12 +11,10 @@ import { Box } from "@mui/system";
 import { NewspaperSharp } from "@mui/icons-material";
 import { Menu } from "@mui/material";
 import { MenuItem } from "@mui/material";
-import { useRouter } from "next/router";
-import Stories from "./Stories";
+import NewsBody from "./NewsBody";
 import useNews from "../utils/extApiHook";
 
-const Header = () => {
-  const router = useRouter();
+const NewsRetrieve = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const [category, setCategory] = React.useState("Top Headlines");
@@ -86,21 +84,14 @@ const Header = () => {
 
   React.useEffect(() => {}, [newsObject]);
 
-  const urlObjSet = (category) => {
-    let lowerCaseCategory = category.toString().toLowerCase();
+  const urlObjSet = (newsCategory) => {
+    let lowerCaseCategory = newsCategory.toString().toLowerCase();
     let mainCategory = "";
     if (lowerCaseCategory === "top headlines") {
       mainCategory = "top-headlines";
     } else {
       mainCategory = "everything";
     }
-
-    // const currentDate = new Date();
-    // let day = currentDate.getDate();
-    // let month = currentDate.getMonth() + 1;
-    // let year = currentDate.getFullYear();
-    // // format = 2022-03-13
-    // let formattedDate = year + "-" + month + "-" + day;
     const topicObj = {
       mainChoice: mainCategory,
       secondaryChoice: lowerCaseCategory,
@@ -176,7 +167,7 @@ const Header = () => {
             sx={{ mr: 1 }}
             // sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            NewsWorthy
+            NewzWorthy
           </Typography>
           <NewspaperSharp></NewspaperSharp>
         </Toolbar>
@@ -211,9 +202,9 @@ const Header = () => {
           {category}
         </Typography>
       </Box>
-      <Stories news={news} isLoading={isLoading} isError={isError} />
+      <NewsBody news={news} isLoading={isLoading} isError={isError} />
     </Box>
   );
 };
 
-export default Header;
+export default NewsRetrieve;

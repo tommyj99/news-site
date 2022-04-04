@@ -13,12 +13,7 @@ export default async (req, res) => {
     url = `https://newsapi.org/v2/${mainChoice}?language=en&from=${date}&apiKey=${process.env.NEWS_KEY}`; // process.env.REACT_APP_NEWS_API_KEY2
   }
 
-  await axios
-    .get(url)
-    .then(({ data }) => {
-      res.status(200).json({ data });
-    })
-    .catch(({ err }) => {
-      res.status(400).json({ err });
-    });
+  await axios.get(url).then(({ data }) => {
+    res.status(200).json({ data });
+  });
 };
