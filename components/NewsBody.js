@@ -91,7 +91,7 @@ const NewsBody = (props) => {
     showLoadingContent = true;
     typography1 = "No results returned for search entry.";
     typography2 = "Please check spelling or retry another search.";
-    newsArticles = props.news.data.articles;
+    newsArticles = props.news.articles;
   } else {
     newsArticles = props.news.articles;
   }
