@@ -7,17 +7,17 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 export default function useNews(params) {
   const { mainChoice, secondaryChoice, date } = params;
 
-  //   let url = "";
+  let url = "";
 
-  //   if (mainChoice === "everything") {
-  //     url = `https://newsapi.org/v2/${mainChoice}?q=${secondaryChoice}&sortBy=relevency&language=en&from=${date}&apiKey=${process.env.NEWS_KEY}`; // process.env.REACT_APP_NEWS_API_KEY2
-  //   } else {
-  //     url = `https://newsapi.org/v2/${mainChoice}?language=en&from=${date}&apiKey=15b7ace0b5b14e539c5327b3460c8ce`; // process.env.REACT_APP_NEWS_API_KEY2
-  //   }
+  if (mainChoice === "everything") {
+    url = `https://newsapi.org/v2/${mainChoice}?q=${secondaryChoice}&sortBy=relevency&language=en&from=${date}&apiKey=${process.env.NEWS_KEY}`; // process.env.REACT_APP_NEWS_API_KEY2
+  } else {
+    url = `https://newsapi.org/v2/${mainChoice}?language=en&from=${date}&apiKey=${process.env.NEWS_KEY}`; // process.env.REACT_APP_NEWS_API_KEY2
+  }
 
   const { data, error } = useSWR(
-    //url,
-    `api/server?mainchoice=${mainChoice}&secondarychoice=${secondaryChoice}&date=${date}`,
+    url,
+    //`api/server?mainchoice=${mainChoice}&secondarychoice=${secondaryChoice}&date=${date}`,
     fetcher
   );
 
