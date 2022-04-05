@@ -12,6 +12,7 @@ const NewsBody = (props) => {
   let typography2 = "";
   let showLoadingContent = false;
 
+  // sets up a skeleton for news while loading
   const SkeletonNews = () => {
     return (
       <Paper>
@@ -50,12 +51,14 @@ const NewsBody = (props) => {
     );
   };
 
+  // while loading, returns skeleton
   if (props.isLoading) {
     return Array.apply(null, { length: 5 }).map((item, index) => (
       <SkeletonNews key={index} />
     ));
   }
 
+  // returns error notification if website cannot be reached
   const LoadingError = (props) => {
     if (showLoadingContent) {
       return (
