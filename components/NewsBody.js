@@ -4,101 +4,146 @@ import { Paper } from "@mui/material";
 import { Typography } from "@mui/material";
 import { Skeleton } from "@mui/material";
 import styles from "../styles/Home.module.css";
+import NewsArticles from "../newsStories.json";
 
 const NewsBody = (props) => {
-  const typography1 = "Error! Could not access news API";
-  const typography2 =
-    "Locally cached, older news stories, have been loaded for demonstration purposes.";
-  const typography3 = "No results returned for search entry.";
-  const typography4 = "Please check spelling or retry another search.";
-  const [loadError, setLoadError] = React.useState(false);
+  let newsArticles = NewsArticles;
+  let typography1 = "";
+  let typography2 = "";
+  let showLoadingContent = false;
 
-  if (props.isLoading) {
+  const SkeletonNews = () => {
     return (
-      <div className={styles.container}>
-        <main className="App">
-          <Skeleton variant="text" />
-        </main>
-      </div>
-    );
-  }
-
-  const LoadingError = (props) => {
-    return (
-      <Paper
-        style={{
-          marginTop: "10px",
-        }}
-      >
-        <Box>
-          <Typography
-            variant="h5"
+      <Paper>
+        <Box
+          style={{
+            padding: "5px",
+            display: "flex",
+            flexWrap: "wrap",
+            marginTop: "30px",
+          }}
+        >
+          <Box
             style={{
-              color: "red",
+              maxWidth: "50%",
+              minWidth: "320px",
             }}
           >
-            {props.typography1}
-          </Typography>
-          <Typography variant="h6">{props.typography2}</Typography>
+            <Skeleton variant="rectangular" width={320} height={240} />
+          </Box>
+          <Box
+            style={{
+              minWidth: "5px",
+            }}
+          />
+          <Box
+            style={{
+              maxWidth: "48%",
+              minWidth: "320px",
+            }}
+          >
+            <Skeleton variant="text" />
+            <Skeleton variant="text" />
+          </Box>
         </Box>
       </Paper>
     );
   };
 
+  if (props.isLoading) {
+    return Array.apply(null, { length: 5 }).map((item, index) => (
+      <SkeletonNews key={index} />
+    ));
+  }
+
+  const LoadingError = (props) => {
+    if (showLoadingContent) {
+      return (
+        <Paper
+          style={{
+            marginTop: "10px",
+          }}
+        >
+          <Box>
+            <Typography
+              variant="h5"
+              style={{
+                color: "red",
+              }}
+            >
+              {props.typography1}
+            </Typography>
+            <Typography variant="h6">{props.typography2}</Typography>
+          </Box>
+        </Paper>
+      );
+    } else {
+      return null;
+    }
+  };
+
   if (props.error || props.news === undefined) {
-    return <LoadingError typography1={typography1} typography2={typography2} />;
+    showLoadingContent = true;
+    typography1 = "Error! Could not access news API";
+    typography2 =
+      "Locally cached, older news stories, have been loaded for demonstration purposes.";
   } else if (props.news.data.articles.length === 0) {
-    return <LoadingError typography1={typography3} typography2={typography4} />;
+    showLoadingContent = true;
+    typography1 = "No results returned for search entry.";
+    typography2 = "Please check spelling or retry another search.";
+    newsArticles = props.news.data.articles;
   } else {
-    return (
-      <Box>
-        {props.news.data.articles.map((item, index) => (
-          <Paper key={index}>
+    newsArticles = props.news.data.articles;
+  }
+  return (
+    <Box>
+      <LoadingError typography1={typography1} typography2={typography2} />
+      {newsArticles.map((item, index) => (
+        <Paper key={index}>
+          <Box
+            style={{
+              padding: "5px",
+              display: "flex",
+              flexWrap: "wrap",
+              marginTop: "30px",
+            }}
+            key={index}
+          >
             <Box
               style={{
-                padding: "5px",
-                display: "flex",
-                flexWrap: "wrap",
-                marginTop: "30px",
+                maxWidth: "50%",
+                minWidth: "320px",
               }}
-              key={index}
             >
-              <Box
+              <img
                 style={{
-                  maxWidth: "50%",
-                  minWidth: "320px",
+                  maxWidth: "100%",
                 }}
-              >
-                <img
-                  style={{
-                    maxWidth: "100%",
-                  }}
-                  key={index}
-                  src={item.urlToImage ? item.urlToImage : "/no-image.png"}
-                ></img>
-              </Box>
-              <Box
-                style={{
-                  minWidth: "5px",
-                }}
-              />
-              <Box
-                style={{
-                  maxWidth: "48%",
-                  minWidth: "320px",
-                }}
-              >
-                <Typography variant="h5">
-                  <a href={item.url}>{item.title}</a>
-                </Typography>
-                <Typography>{item.description}</Typography>
-              </Box>
+                key={index}
+                src={item.urlToImage ? item.urlToImage : "/no-image.png"}
+              ></img>
             </Box>
-          </Paper>
-        ))}
-      </Box>
-    );
-  }
+            <Box
+              style={{
+                minWidth: "5px",
+              }}
+            />
+            <Box
+              style={{
+                maxWidth: "48%",
+                minWidth: "320px",
+              }}
+            >
+              <Typography variant="h5">
+                <a href={item.url}>{item.title}</a>
+              </Typography>
+              <Typography>{item.description}</Typography>
+            </Box>
+          </Box>
+        </Paper>
+      ))}
+    </Box>
+  );
 };
 
 export default NewsBody;

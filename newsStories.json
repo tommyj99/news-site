@@ -1,0 +1,245 @@
+
+
+
+    [{
+        "source": {
+            "id": null,
+            "name": "New York Times"
+        },
+        "author": "Dan Bilefsky, Marc Santora",
+        "title": "The Latest Ukraine-Russia War News: Live Updates and Video - The New York Times",
+        "description": "The low rumble of heavy artillery fire echoed across Kyiv on Friday as Russian forces renewed their ground offensive and widened their bombardment of Ukraine.",
+        "url": "https://www.nytimes.com/live/2022/03/11/world/ukraine-russia-news",
+        "urlToImage": "https://static01.nyt.com/images/2022/03/11/world/11ukraine-blog-promo-300pm/11ukraine-blog-header-245pm--facebookJumbo.jpg",
+        "publishedAt": "2022-03-11T20:29:33Z",
+        "content": "As Russian troops massed near the border with Ukraine last month, the American ambassador to Israel received an appeal on behalf of Roman Abramovich, the most visible of the billionaires linked toPre… [+13287 chars]"
+    }, {
+        "source": {
+            "id": "the-washington-post",
+            "name": "The Washington Post"
+        },
+        "author": "Missy Ryan, Adela Suliman, Maite Fernández Simon",
+        "title": "United Nations Security Council to meet over Russian claim of biolabs in Ukraine - The Washington Post",
+        "description": "The claim was vehemently denied by the United States and Ukraine, with both warning the Russian disinformation campaign could be a prelude to Russia's use of chemical weapons.",
+        "url": "https://www.washingtonpost.com/world/2022/03/11/un-council-ukraine-russia-chemical-weapons-zelensky/",
+        "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/PM767JU6LYI6ZFBYEVLQTNWN3Q.jpg&w=1440",
+        "publishedAt": "2022-03-11T20:10:05Z",
+        "content": "He said the reckless activity included research related to diseases born by birds, lice and fleas. We call on you to think about a very real biological danger to the people in European countries whic… [+7508 chars]"
+    }, {
+        "source": {
+            "id": null,
+            "name": "CNBC"
+        },
+        "author": "Sarah Whitten",
+        "title": "Disney pauses political donations in Florida, CEO Chapek apologizes for silence over 'Don't Say Gay' bill - CNBC",
+        "description": "Disney CEO Bob Chapek apologized for not being a \"stronger ally\" for the LGBTQ+ community and for the company's silence over Florida's \"Don't Say Gay\" bill.",
+        "url": "https://www.cnbc.com/2022/03/11/disney-pauses-political-donations-in-florida-over-dont-say-gay-bill-backlash.html",
+        "urlToImage": "https://image.cnbcfm.com/api/v1/image/107013300-1644441124370-bob.jpg?v=1644441146",
+        "publishedAt": "2022-03-11T20:03:02Z",
+        "content": "Disney's CEO said Friday the company is ceasing its political donations in Florida due to the state's so-called \"Don't Say Gay\" bill, and he apologized for the company's previous silence on the issue… [+3470 chars]"
+    }, {
+        "source": {
+            "id": null,
+            "name": "ESPN"
+        },
+        "author": "Tim McManus",
+        "title": "Source - Philadelphia Eagles make Jason Kelce highest-paid center in NFL with new $14 million deal - ESPN",
+        "description": "The Eagles and center Jason Kelce have agreed to a new $14 million contract, a source confirmed, making him the highest-paid center in the league.",
+        "url": "https://www.espn.com/nfl/story/_/id/33478247/philadelphia-eagles-make-jason-kelce-highest-paid-center-nfl-new-14-million-deal",
+        "urlToImage": "https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2021%2F0828%2Fr901341_1296x729_16%2D9.jpg",
+        "publishedAt": "2022-03-11T20:01:21Z",
+        "content": "PHILADELPHIA -- The Eagles and center Jason Kelce have agreed to a new $14 million contract, a source confirmed, making him the highest-paid center in the league.\r\nKelce, who had been mulling retirem… [+1036 chars]"
+    }, {
+        "source": {
+            "id": "reuters",
+            "name": "Reuters"
+        },
+        "author": null,
+        "title": "EXCLUSIVE WHO says it advised Ukraine to destroy pathogens in health labs to prevent disease spread - Reuters.com",
+        "description": "The World Health Organization advised Ukraine to destroy high-threat pathogens housed in the country's public health laboratories to prevent \"any potential spills\" that would spread disease among the population, the agency told Reuters.",
+        "url": "https://www.reuters.com/world/europe/exclusive-who-says-it-advised-ukraine-destroy-pathogens-health-labs-prevent-2022-03-11/",
+        "urlToImage": "https://www.reuters.com/resizer/BNAdeXutDBAKpLiHm3Cw1m52FP4=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/RSGHYPARLBIH5MA4T6IZ6N25LA.jpg",
+        "publishedAt": "2022-03-11T19:57:00Z",
+        "content": "March 11 (Reuters) - The World Health Organization advised Ukraine to destroy high-threat pathogens housed in the country's public health laboratories to prevent \"any potential spills\" that would spr… [+3128 chars]"
+    }, {
+        "source": {
+            "id": null,
+            "name": "New York Times"
+        },
+        "author": "J. David Goodman",
+        "title": "Texas Child Abuse Investigators Told to Make Transgender Cases a Priority - The New York Times",
+        "description": "In a court hearing, a supervisor testified that the state agency responsible for child welfare was told to investigate parents of transgender children without exception.",
+        "url": "https://www.nytimes.com/2022/03/11/us/texas-transgender-child-abuse.html",
+        "urlToImage": "https://static01.nyt.com/images/2022/03/11/us/11texas-case02/11texas-case02-facebookJumbo.jpg",
+        "publishedAt": "2022-03-11T19:41:15Z",
+        "content": "A federal court held an emergency hearing on Thursday, unrelated to the fight over transgender children, regarding a report of an agency employee who has been accused of sex trafficking, abuse and ne… [+1105 chars]"
+    }, {
+        "source": {
+            "id": "reuters",
+            "name": "Reuters"
+        },
+        "author": null,
+        "title": "Russian forces regrouping on Kyiv outskirts after setbacks - Reuters.com",
+        "description": "President Volodymyr Zelenskiy said on Friday Ukraine had reached a \"strategic turning point\" in the conflict with Russia, but Russian forces bombarded cities across the country and appeared to be regrouping for a possible assault on the capital Kyiv.",
+        "url": "https://www.reuters.com/world/europe/russian-forces-regrouping-kyiv-outskirts-after-setbacks-2022-03-11/",
+        "urlToImage": "https://www.reuters.com/resizer/0P2vK8xopOqvAGwiMLdl08V7E2o=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/GTIJ76XI7NIYJPOOTBBQHAE6PI.jpg",
+        "publishedAt": "2022-03-11T19:36:00Z",
+        "content": "LVIV, Ukraine, March 11 (Reuters) - President Volodymyr Zelenskiy said on Friday Ukraine had reached a \"strategic turning point\" in the conflict with Russia, but Russian forces bombarded cities acros… [+7004 chars]"
+    }, {
+        "source": {
+            "id": null,
+            "name": "CNBC"
+        },
+        "author": "Melissa Repko",
+        "title": "CVS fires several employees and executives after internal sexual harassment investigation - CNBC",
+        "description": "CVS has fired several employees and executives after an internal investigation into alleged harassment.",
+        "url": "https://www.cnbc.com/2022/03/11/cvs-ceo-karen-lynch-fires-executives-after-internal-sexual-harassment-probe.html",
+        "urlToImage": "https://image.cnbcfm.com/api/v1/image/106834116-16122907582021-02-02t183159z_1523564420_rc2ikl90rmzs_rtrmadp_0_health-coronavirus-usa-vaccines.jpeg?v=1612290800",
+        "publishedAt": "2022-03-11T19:21:17Z",
+        "content": "CVS Health said Friday that it fired several employees, including executives, following an internal investigation into how the company handled sexual harassment complaints.\r\nThe company also said it … [+3460 chars]"
+    }, {
+        "source": {
+            "id": null,
+            "name": "New York Post"
+        },
+        "author": "Lee Brown",
+        "title": "Alec Baldwin blames late Halyna Hutchins in fatal 'Rust' shooting: new docs - New York Post ",
+        "description": "The 63-year-old actor insisted that every single mistake leading to the Oct. 21 shooting on the New Mexico set of “Rust” was “performed by someone else.”",
+        "url": "https://nypost.com/2022/03/11/alec-baldwin-denies-responsibility-for-killing-halyna-hutchins/",
+        "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2022/03/baldwin-rust.jpg?quality=90&strip=all&w=1024",
+        "publishedAt": "2022-03-11T19:19:00Z",
+        "content": "Alec Baldwin filed legal papers Friday denying any responsibility for shooting dead Halyna Hutchins  even blaming the late cinematographer for giving him the directions that led to the deadly acciden… [+6778 chars]"
+    }, {
+        "source": {
+            "id": "fox-news",
+            "name": "Fox News"
+        },
+        "author": "Stephanie Nolasco",
+        "title": "Mila Kunis and Ashton Kutcher raise more than $20M for Ukraine in less than a week: ‘We’re not done’ - Fox News",
+        "description": "The couple and former “That ‘70s Show” stars announced last week they were raising donations via GoFundMe.",
+        "url": "https://www.foxnews.com/entertainment/mila-kunis-ashton-kutcher-raise-money-ukraine",
+        "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2022/03/Getty_AshtonKutcher_MilaKunis.jpg",
+        "publishedAt": "2022-03-11T19:05:06Z",
+        "content": "Mila Kunis and Ashton Kutcher have raised more than $20 million in less than a week for the actress native country of Ukraine in response to the Russian invasion but their work is far from over.\r\n\"We… [+2840 chars]"
+    }, {
+        "source": {
+            "id": "cnn",
+            "name": "CNN"
+        },
+        "author": "Tierney Sneed",
+        "title": "Texas Supreme Court further limits challenges to state's restrictive abortion law - CNN",
+        "description": "The Texas Supreme Court on Friday issued a ruling that effectively foreclosed the last avenue abortion clinics had to challenge the state's six-week limit on abortions in their current federal litigation.",
+        "url": "https://www.cnn.com/2022/03/11/politics/texas-supreme-court-six-week-abortion/index.html",
+        "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/211012120208-02-texas-abortion-protest-super-tease.jpg",
+        "publishedAt": "2022-03-11T19:04:00Z",
+        "content": "(CNN)The Texas Supreme Court on Friday issued a ruling that effectively foreclosed the last avenue abortion clinics had to challenge the state's six-week limit on abortions in their current federal l… [+5667 chars]"
+    }, {
+        "source": {
+            "id": null,
+            "name": "The Guardian"
+        },
+        "author": "Lauren Gambino, Julian Borger, Sam Levine",
+        "title": "US and allies set to revoke normal trade relations with Russia over Ukraine war, says Biden – follow live - The Guardian",
+        "description": "US expected to join G7 nations and EU in action to punish Moscow for what the White House calls ‘unprovoked and unjustified war on Ukraine’",
+        "url": "https://www.theguardian.com/us-news/live/2022/mar/11/joe-biden-suspension-normal-trade-russia-ukraine-us-politics-latest",
+        "urlToImage": "https://i.guim.co.uk/img/media/246dfbb3aab90a22f4ea79fd674d7d716892d57d/0_72_6000_3600/master/6000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=bbbc65d968b2dbab47794e889ffe5ab2",
+        "publishedAt": "2022-03-11T18:38:25Z",
+        "content": null
+    }, {
+        "source": {
+            "id": null,
+            "name": "CBS Sports"
+        },
+        "author": "Joel Corry",
+        "title": "Agent's Take: Asking prices for Tyrann Mathieu and other intriguing defensive players with expiring contracts - CBS Sports",
+        "description": "Target prices for 10 players who will be unrestricted free agents or were designated as franchise players",
+        "url": "https://www.cbssports.com/nfl/news/agents-take-asking-prices-for-tyrann-mathieu-and-other-intriguing-defensive-players-with-expiring-contracts/",
+        "urlToImage": "https://sportshub.cbsistatic.com/i/r/2021/10/15/ba00444f-9ae2-4703-85fb-03efc0701996/thumbnail/1200x675/f88d3e72394abc7e4726f96886e84596/gettyimages-1235568676.jpg",
+        "publishedAt": "2022-03-11T17:57:00Z",
+        "content": "Target prices for 10 offensive players with expiring contracts were covered in an article earlier in the week. The focus now turns to the other side of the ball. \r\nThings will get moving next week wh… [+11665 chars]"
+    }, {
+        "source": {
+            "id": "the-washington-post",
+            "name": "The Washington Post"
+        },
+        "author": "David J. Lynch",
+        "title": "Biden, European allies move to strip Russia of trade status - The Washington Post",
+        "description": "The president calls the actions a “crushing blow\" to the Russian economy, which already has been pummeled by financial sanctions.",
+        "url": "https://www.washingtonpost.com/business/2022/03/11/biden-russia-trade-relations-eu/",
+        "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/03-11-2022/t_426e693d4d2b49a9b4e6626b5c32bb59_name_biden.jpg&w=1440",
+        "publishedAt": "2022-03-11T17:45:15Z",
+        "content": "Biden called the actions another crushing blow to Russias economy, which has been pummeled by comprehensive financial sanctions announced in the aftermath of Moscows Feb. 24th invasion of its neighbo… [+4526 chars]"
+    }, {
+        "source": {
+            "id": "the-verge",
+            "name": "The Verge"
+        },
+        "author": "Jay Peters",
+        "title": "Ubisoft says it experienced a 'cyber security incident' - The Verge",
+        "description": "Ubisoft says it experienced a “cyber security incident” last week that temporarily disrupted some games, systems, and services. The company does not believe player personal information was exposed.",
+        "url": "https://www.theverge.com/2022/3/11/22972768/ubisoft-cyber-security-incident-hack",
+        "urlToImage": "https://cdn.vox-cdn.com/thumbor/av-YuYmmOvQ4mtboFUzJwxM93d8=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/16309953/acastro_190528_1777_ubisoft_0002.0.jpg",
+        "publishedAt": "2022-03-11T17:12:00Z",
+        "content": "It believes no personal player information was exposed\r\nIllustration by Alex Castro / The Verge\r\nUbisoft experienced a cyber security incident last week that temporarily disrupted some games, systems… [+980 chars]"
+    }, {
+        "source": {
+            "id": null,
+            "name": "Yahoo Entertainment"
+        },
+        "author": "Emily McCormick",
+        "title": "Stock market news live updates: Stocks fall amid Russia-Ukraine jitters, drop in consumer sentiment - Yahoo Finance",
+        "description": "Stocks fell Friday as investors mulled upbeat remarks from Russian President Vladimir Putin about diplomatic discussions with Ukraine and a weaker-than...",
+        "url": "https://finance.yahoo.com/news/stock-market-news-live-updates-march-11-2022-231425579.html",
+        "urlToImage": "https://s.yimg.com/ny/api/res/1.2/sp._gVu29IA78WeQqTazww--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2022-03/d0458f20-a0bf-11ec-999f-e16987dcaf91",
+        "publishedAt": "2022-03-11T16:41:24Z",
+        "content": "Stocks fell Friday as investors mulled upbeat remarks from Russian President Vladimir Putin about diplomatic discussions with Ukraine and a weaker-than-expected print on U.S. consumer sentiment.\r\nThe… [+8608 chars]"
+    }, {
+        "source": {
+            "id": null,
+            "name": "CNBC"
+        },
+        "author": "Dan Mangan",
+        "title": "Russia restricts Instagram after its parent Meta allows violent threats against military for Ukraine invasion - CNBC",
+        "description": "Russia has taken actions against Meta sites Instagram and Facebook as part of a media crackdown amid its invasion of Ukraine.",
+        "url": "https://www.cnbc.com/2022/03/11/russia-restricts-instagram-after-meta-due-to-ukraine-threats.html",
+        "urlToImage": "https://image.cnbcfm.com/api/v1/image/107029092-1647010951507-gettyimages-1238861909-porzycki-russiaan220301_npNui.jpeg?v=1647010987",
+        "publishedAt": "2022-03-11T16:21:15Z",
+        "content": "Russia's technology regulatory agency on Friday restricted access to Instagram afterparent company Meta Platforms began allowing users in some countries to call for violence against Russia's presiden… [+1897 chars]"
+    }, {
+        "source": {
+            "id": null,
+            "name": "Gizmodo.com"
+        },
+        "author": "Sabina Graves",
+        "title": "Pixar's Turning Red Perfectly Encapsulates Teenage Discovery - Gizmodo",
+        "description": "It's not just a phase, it's a transformation, mom!",
+        "url": "https://gizmodo.com/turning-red-review-pixar-disney-plus-streaming-1848636075",
+        "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/342cb229876bcbb39c7e24eb8bb22f3a.jpg",
+        "publishedAt": "2022-03-11T16:00:00Z",
+        "content": "Based on director Domee Shis upbringing in Canada during the early aughts, PixarsTurning Red encapsulates the era right before teens fully lived on the internet. Its quite the nostalgia punch back to… [+4522 chars]"
+    }, {
+        "source": {
+            "id": null,
+            "name": "CBS Sports"
+        },
+        "author": "Kyle Boone",
+        "title": "2022 Big Ten Tournament bracket, schedule: Live updates, college basketball scores, bracketology, standings - CBS Sports",
+        "description": "Here's everything you need to know to follow 2022 Big Ten Tournament action throughout the event",
+        "url": "https://www.cbssports.com/college-basketball/news/2022-big-ten-tournament-bracket-schedule-live-updates-college-basketball-scores-bracketology-standings/live/",
+        "urlToImage": "https://sportshub.cbsistatic.com/i/r/2022/01/24/ea7ca946-b7dd-4220-b41a-548734a48e1b/thumbnail/1200x675/768e0470aa7ae1ed89b0adc776154339/big-ten-logo.jpg",
+        "publishedAt": "2022-03-11T15:35:00Z",
+        "content": "The Big Ten Tournament's already been full of surprises this week, and the second round of play on Thursday really delivered on the drama as it featured an epic Michigan collapse, a dominant Iowa win… [+2320 chars]"
+    }, {
+        "source": {
+            "id": null,
+            "name": "SB Nation"
+        },
+        "author": "Demetrius Bell",
+        "title": "MLB lockout: What new collective bargaining agreement means for future of baseball - SB Nation",
+        "description": "The lockout is finally over. Now it’s time to look towards what the next few years may have in store for Major League Baseball.",
+        "url": "https://www.sbnation.com/mlb/2022/3/11/22971620/mlb-lockout-deal-cba-expanded-playoffs-universal-dh-cbt-draft-lottery",
+        "urlToImage": "https://cdn.vox-cdn.com/thumbor/Rcz1rvhXQVNbAJUWAQrMlLGlxCE=/0x761:5318x3545/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23306143/1345590953.jpg",
+        "publishedAt": "2022-03-11T15:10:39Z",
+        "content": "After nearly 100 days of having its doors locked to the players, Major League Baseballs lockout has finally come to an end after the owners and the Major League Baseball Players Association came to a… [+7832 chars]"
+    }
+]

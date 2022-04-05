@@ -179,7 +179,7 @@ const NewsRetrieve = () => {
               <SearchRoundedIcon />
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="Search NewsWorthy…"
+              placeholder="Search NewzWorthy…"
               inputProps={{ "aria-label": "search" }}
               onKeyPress={handleSearchOnEnter}
             ></StyledInputBase>
