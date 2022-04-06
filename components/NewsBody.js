@@ -137,9 +137,15 @@ const NewsBody = (props) => {
                 minWidth: "320px",
               }}
             >
-              <Typography variant="h5">
-                <a href={item.url}>{item.title}</a>
-              </Typography>
+              <a
+                style={{
+                  color: "blue",
+                }}
+                href={item.url}
+              >
+                <Typography variant="h5">{item.title}</Typography>
+              </a>
+
               <Typography>{item.description}</Typography>
             </Box>
           </Box>
