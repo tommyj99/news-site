@@ -90,15 +90,12 @@ const NewsBody = (props) => {
     typography1 = "Error! Could not access news API";
     typography2 =
       "Locally cached, older news stories, have been loaded for demonstration purposes.";
-    //} else if (props.news.articles.length === 0) {
   } else if (props.news.data.articles.length === 0) {
     showLoadingContent = true;
     typography1 = "No results returned for search entry.";
     typography2 = "Please check spelling or retry another search.";
-    //newsArticles = props.news.articles;
     newsArticles = props.news.data.articles;
   } else {
-    //newsArticles = props.news.articles;
     newsArticles = props.news.data.articles;
   }
   return (

@@ -9,7 +9,6 @@ export default function useNews(params) {
 
   const { data, error } = useSWR(
     `api/server?mainchoice=${mainChoice}&secondarychoice=${secondaryChoice}&date=${date}`,
-    //`https://api-relay-tommyj.herokuapp.com/api/news?mainchoice=${mainChoice}&secondarychoice=${secondaryChoice}&date=${date}`,
     fetcher
   );
 
