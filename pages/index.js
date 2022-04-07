@@ -31,7 +31,7 @@ export default function Home() {
         </Box>
         <Box
           style={{
-            marginLeft: "5%",
+            marginLeft: "1%",
             marginRight: "5%",
           }}
         >
