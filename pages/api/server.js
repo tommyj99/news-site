@@ -24,6 +24,7 @@ export default async (req, res) => {
     url = `https://newsapi.org/v2/${mainChoice}?language=en&from=${date}&apiKey=${process.env.NEWS_KEY}`; // process.env.REACT_APP_NEWS_API_KEY2
   }
 
+  // need to verify the necessity of this
   await cors(req, res);
 
   await axios.get(url).then(({ data }) => {
