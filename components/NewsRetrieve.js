@@ -13,6 +13,7 @@ import { Menu } from "@mui/material";
 import { MenuItem } from "@mui/material";
 import NewsBody from "./NewsBody";
 import useNews from "../utils/extApiHook";
+import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 
 const NewsRetrieve = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -52,6 +53,7 @@ const NewsRetrieve = () => {
     },
     marginLeft: 0,
     width: "100%",
+
     [theme.breakpoints.up("sm")]: {
       marginLeft: theme.spacing(1),
       width: "auto",
@@ -130,7 +132,7 @@ const NewsRetrieve = () => {
   return (
     <Box>
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar display="flex">
           <IconButton
             id={"burger-button"}
             size="large"
@@ -162,7 +164,7 @@ const NewsRetrieve = () => {
           </Menu>
           <Typography
             variant="h6"
-            noWrap
+            //noWrap
             component="div"
             sx={{ mr: 1 }}
             // sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
@@ -170,10 +172,23 @@ const NewsRetrieve = () => {
             NewzWorthy
           </Typography>
           <NewspaperSharp></NewspaperSharp>
+          <IconButton
+            style={{
+              marginLeft: "50px",
+              marginRight: "20px",
+            }}
+            onClick={() => router.replace("https://tommyj.net/portfolio")}
+          >
+            <BusinessCenterIcon
+              style={{
+                color: "white",
+              }}
+            ></BusinessCenterIcon>
+          </IconButton>
         </Toolbar>
       </AppBar>
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar display="flex">
           <Search>
             <SearchIconWrapper aria-label="search-icon">
               <SearchRoundedIcon />
