@@ -14,11 +14,31 @@ import { MenuItem } from "@mui/material";
 import NewsBody from "./NewsBody";
 import useNews from "../utils/extApiHook";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
+import { useRef } from "react";
+import Router from "next/router";
 
 const NewsRetrieve = () => {
+  const appBarRef = useRef();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const [category, setCategory] = React.useState("Top Headlines");
+  const [width, setWidth] = React.useState();
+  const [browserWidth, setBrowserWidth] = React.useState();
+  const router = Router;
+
+  React.useEffect(() => {
+    window.addEventListener("resize", getMainWidth);
+  }, []);
+
+  React.useEffect(() => {
+    setBrowserWidth(window.innerWidth);
+  }, [width]);
+
+  const getMainWidth = () => {
+    if (appBarRef.current !== null) {
+      setWidth(appBarRef.current.offsetWidth);
+    }
+  };
 
   function getCurrentDate() {
     const currentDate = new Date();
@@ -130,77 +150,155 @@ const NewsRetrieve = () => {
   };
 
   return (
-    <Box>
-      <AppBar position="static">
-        <Toolbar display="flex">
-          <IconButton
-            id={"burger-button"}
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open-drawer"
-            aria-controls={open ? "basic-menu" : undefined}
-            aria-haspopup="true"
-            aria-expanded={open ? "true" : undefined}
-            onClick={handleMenuClick}
-            sx={{ mr: 2 }}
-          >
-            <MenuRoundedIcon />
-          </IconButton>
-          <Menu
-            id="cat-menu"
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-            MenuListProps={{
-              "aria-labelledby": "burger-button",
-            }}
-          >
-            {menuArray.map((item, index) => (
-              <MenuItem key={index} onClick={handleClose}>
-                {item}
-              </MenuItem>
-            ))}
-          </Menu>
-          <Typography
-            variant="h6"
-            //noWrap
-            component="div"
-            sx={{ mr: 1 }}
-            // sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-          >
-            NewzWorthy
-          </Typography>
-          <NewspaperSharp></NewspaperSharp>
-          <IconButton
-            style={{
-              marginLeft: "50px",
-              marginRight: "20px",
-            }}
-            onClick={() => router.replace("https://tommyj.net/portfolio")}
-          >
-            <BusinessCenterIcon
-              style={{
-                color: "white",
+    <Box ref={appBarRef}>
+      {width > 648 || browserWidth > 660 ? (
+        <AppBar position="static">
+          <Toolbar display="flex">
+            <IconButton
+              id={"burger-button"}
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="open-drawer"
+              aria-controls={open ? "basic-menu" : undefined}
+              aria-haspopup="true"
+              aria-expanded={open ? "true" : undefined}
+              onClick={handleMenuClick}
+              sx={{ mr: 2 }}
+            >
+              <MenuRoundedIcon />
+            </IconButton>
+            <Menu
+              id="cat-menu"
+              anchorEl={anchorEl}
+              open={open}
+              onClose={handleClose}
+              MenuListProps={{
+                "aria-labelledby": "burger-button",
               }}
-            ></BusinessCenterIcon>
-          </IconButton>
-        </Toolbar>
-      </AppBar>
-      <AppBar position="static">
-        <Toolbar display="flex">
-          <Search>
-            <SearchIconWrapper aria-label="search-icon">
-              <SearchRoundedIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search NewzWorthy…"
-              inputProps={{ "aria-label": "search" }}
-              onKeyPress={handleSearchOnEnter}
-            ></StyledInputBase>
-          </Search>
-        </Toolbar>
-      </AppBar>
+            >
+              {menuArray.map((item, index) => (
+                <MenuItem key={index} onClick={handleClose}>
+                  {item}
+                </MenuItem>
+              ))}
+            </Menu>
+            <Typography
+              variant="h6"
+              //noWrap
+              component="div"
+              sx={{ mr: 1 }}
+              // sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            >
+              NewzWorthy
+            </Typography>
+            <NewspaperSharp></NewspaperSharp>
+            <IconButton
+              style={{
+                marginLeft: "50px",
+                marginRight: "20px",
+              }}
+              onClick={() => router.replace("https://tommyj.net/portfolio")}
+            >
+              <BusinessCenterIcon
+                style={{
+                  color: "white",
+                }}
+              ></BusinessCenterIcon>
+            </IconButton>
+            <Box
+              noWrap
+              component="div"
+              sx={{
+                flexGrow: 1,
+              }}
+            />
+            <Search>
+              <SearchIconWrapper aria-label="search-icon">
+                <SearchRoundedIcon />
+              </SearchIconWrapper>
+              <StyledInputBase
+                placeholder="Search NewzWorthy…"
+                inputProps={{ "aria-label": "search" }}
+                onKeyPress={handleSearchOnEnter}
+              ></StyledInputBase>
+            </Search>
+          </Toolbar>
+        </AppBar>
+      ) : (
+        <Box>
+          <AppBar position="static">
+            <Toolbar display="flex">
+              <IconButton
+                id={"burger-button"}
+                size="large"
+                edge="start"
+                color="inherit"
+                aria-label="open-drawer"
+                aria-controls={open ? "basic-menu" : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? "true" : undefined}
+                onClick={handleMenuClick}
+                sx={{ mr: 2 }}
+              >
+                <MenuRoundedIcon />
+              </IconButton>
+              <Menu
+                id="cat-menu"
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                MenuListProps={{
+                  "aria-labelledby": "burger-button",
+                }}
+              >
+                {menuArray.map((item, index) => (
+                  <MenuItem key={index} onClick={handleClose}>
+                    {item}
+                  </MenuItem>
+                ))}
+              </Menu>
+              <Typography
+                variant="h6"
+                //noWrap
+                component="div"
+                sx={{ mr: 1 }}
+                // sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+              >
+                NewzWorthy
+              </Typography>
+              <NewspaperSharp></NewspaperSharp>
+              <IconButton
+                style={{
+                  marginLeft: "50px",
+                  marginRight: "20px",
+                }}
+                onClick={() => router.replace("https://tommyj.net/portfolio")}
+              >
+                <BusinessCenterIcon
+                  style={{
+                    color: "white",
+                  }}
+                ></BusinessCenterIcon>
+              </IconButton>
+            </Toolbar>
+          </AppBar>
+          <AppBar position="static">
+            <Toolbar display="flex">
+              <Search>
+                <SearchIconWrapper aria-label="search-icon">
+                  <SearchRoundedIcon />
+                </SearchIconWrapper>
+                <StyledInputBase
+                  placeholder="Search NewzWorthy…"
+                  inputProps={{ "aria-label": "search" }}
+                  onKeyPress={handleSearchOnEnter}
+                ></StyledInputBase>
+              </Search>
+            </Toolbar>
+          </AppBar>
+        </Box>
+      )}
       <Box
         style={{
           marginLeft: "5%",

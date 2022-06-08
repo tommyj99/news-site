@@ -20,16 +20,6 @@ export default function Home() {
           display: "flex",
         }}
       >
-        {/* <Box>
-          <IconButton
-            onClick={() => router.replace("https://tommyj.net/portfolio")}
-          >
-            <BusinessCenterIcon></BusinessCenterIcon>
-          </IconButton>
-          <Typography style={{ fontSize: "10px" }}>TommyJ</Typography>
-          <Typography style={{ fontSize: "10px" }}>Portfolio</Typography>
-        </Box> */}
-
         <Box
           style={{
             maxWidth: "100%",
